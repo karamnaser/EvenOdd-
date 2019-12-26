@@ -22,7 +22,7 @@ function playinguntil3wins() {
         creatPlayers(2);
         choosePlayerForRound(players);
         EvenOdd.startingGame(currentplayer)
-        winer = currentplayer.find(player => players.total_wins == 3);
+        winer = currentplayer.find(player => player.total_wins == 3);
         console.log(currentplayer[0].total_wins, currentplayer[1].total_wins)
         currentplayer = [];
     }
